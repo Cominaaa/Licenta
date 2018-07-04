@@ -1,0 +1,9 @@
+<div class = "stepThreeContainer" *ngIf="designService.user.checkedNeedDsgn">
+        <h1> Brief overview </h1>
+        <div>
+                <p>{{designService.contest.contestTitle }} </p>
+                <p>{{designService.contest.contestBrief }} </p>
+                <p>{{designService.contest.other }} </p>
+        </div>
+        <button (click) = "changeScreen()"> Submit contest</button> 
+</div>

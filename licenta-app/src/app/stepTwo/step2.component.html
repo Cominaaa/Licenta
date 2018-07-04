@@ -1,0 +1,28 @@
+<!-- <div class = "stepTwoContainer" *ngIf= "designService.user.checkedDsgn">
+    <h1> Step2</h1>
+    <h2> Designer </h2>
+</div> -->
+
+<div class = "stepTwoContainer" *ngIf="designService.user.checkedNeedDsgn">
+        <h1> Create your contest! </h1>
+        <p>
+                <mat-form-field appearance="outline">
+                  <mat-label>Contest name</mat-label>
+                  <input matInput placeholder="Enter your contest name" [(ngModel)]="designService.contest.contestTitle">
+                  <mat-hint>(e.g Books Contest)</mat-hint>
+                </mat-form-field>
+         </p>
+         <p>
+                <mat-form-field appearance="outline">
+                  <mat-label>Contest details</mat-label>
+                  <textarea matInput placeholder="Enter your details"[(ngModel)] = "designService.contest.contestBrief"></textarea>
+                </mat-form-field>
+         </p>
+         <p>
+                <mat-form-field appearance="outline">
+                  <mat-label>Other</mat-label>
+                  <textarea matInput placeholder="Is there anything else you would like to communicate to the designers?"[(ngModel)] = "designService.contest.other"></textarea>
+                </mat-form-field>
+         </p>
+         
+</div>

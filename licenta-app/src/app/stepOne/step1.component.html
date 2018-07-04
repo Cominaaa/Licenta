@@ -1,0 +1,12 @@
+<div class = "stepOneContainer">
+    <h1>Categories</h1>
+    <div *ngFor = "let val of values; let i = index">
+            <button (click)="selectCategory(i)">{{val.category}}</button>
+            <div *ngIf="categorySelected == i">
+                <button *ngFor="let v of val.subcategories" (click)="selectSubcategory(val.category, v)">{{v}}</button>
+            </div>
+    </div>
+    <div *ngFor="let contest of contests">
+
+    </div>
+</div>
