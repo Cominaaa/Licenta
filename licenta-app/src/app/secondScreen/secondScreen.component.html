@@ -1,0 +1,8 @@
+<div class = "secondScreenContainer">
+    <h1> List of existing contests </h1>
+    <div>
+            <div *ngFor = "let val of designService.listOfContests">
+                <button>{{val.contestTitle}}</button>
+            </div>
+        </div>
+</div>

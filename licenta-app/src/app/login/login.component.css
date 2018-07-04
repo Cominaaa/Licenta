@@ -1,0 +1,22 @@
+.user-container {
+    display: grid;
+    grid-gap: 10px;
+    width: 60%;
+}
+
+.user-container button {
+    width: 50%;
+    border-radius:20px;
+    margin: 0 auto;
+}
+ .user-container p {
+    width: 50%;
+    margin: 10 auto;
+    padding-left: 140px;
+ }
+
+.register-container {
+    display: grid;
+    grid-gap: 10px;
+    width: 60%;
+}
